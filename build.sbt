@@ -8,7 +8,8 @@ ThisBuild / organizationName := "flynnit"
 lazy val root = (project in file("."))
   .settings(
     name := "CheckoutMercator",
+    libraryDependencies += catsCore,
+    libraryDependencies += mockito % Test,
     libraryDependencies += scalatest % Test,
-    libraryDependencies += catsCore
   )
 
